@@ -1,0 +1,460 @@
+<!-- Codigo fuente de html5 de la pagina web de basic template -->
+<!DOCTYPE html>
+<!-- lenguaje en ingles -->
+<html lang="en">
+<!-- encabezado -->
+<head>
+    <!-- caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compatibilidad con internet explore -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Descripcion -->
+    <meta name="description" content="Pagina Web componentes de bootstrap, angular, jquery, react y muchas cosas mas">
+    <!-- titulo -->
+    <title>Templates Example</title>
+    <!-- icono -->
+    <link rel="icon" href="icon/icono.png">
+    <!-- estilos de css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<!-- cuerpo de la pagina we -->
+<body id="mybody" onload="myFunction()" >
+    <!-- codigo del cuerpo  -->
+
+    <!-- preloader area -->
+    <div class="loader_bg" id="loader_bg" >
+        <div class="loader"><img src="img/loading.gif" alt="#" /></div>
+    </div>
+
+
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container menu-container">
+                <div class="row">
+                    <!-- logo -->
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="img/logo.jpg" alt="logo" class="img_logo" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- menu -->
+                    <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10">
+                        <div class="menu-area" >
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <!-- boton del menu -->
+                                    <div class="icon-menu">
+                                        <div class="button_menu">
+                                            <a href="#" id="btnMenu" class="btn_menu">
+                                                <svg  width="1em" height="1em" viewBox="0 0 16 16" class="icon_menu_btn bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>       
+                                    <!-- items del menu -->
+                                    <ul class="menu-area-main menu_items" id="myMenu">
+                                        <li class="active"> <a href="index.html">Home</a> </li>
+                                        <li> <a href="templates/about.html">about</a> </li>
+                                        <li> <a href="templates/album.html"> Albums</a> </li>
+                                        <li> <a href="templates/blog.html">Blog</a> </li>
+                                        <li> <a href="templates/contact.html">Contact</a> </li>
+                                        <li> <a href="#contact">Login</a> </li>         
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- buscador -->
+                    <div class="col-xl-2 col-lg-2 col-md-2">
+                        <form class="search">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <button><img src="img/search_icon.png"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+        </div>
+    </header>
+
+    <!-- principal container -->
+    <div class="container-fluid princ-fondo">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center princ-info">
+                <h1 class="princ-h1">
+                    Mp3
+                </h1>
+                <span class="princ-span">
+                    The Perfect Music
+                </span>
+                <h1 class="princ-h1">
+                    Welcome To The Music
+                </h1>
+                <p class="princ-p">
+                    Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis lacinia nec et est
+                    aptent taciti sociosqu ad litora torquent per conubia nostra
+                </p>
+                <button class="princ-btn">
+                    Download Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- informacion -->
+    <div class="container-fluid cont">
+        <div class="row info-padding">
+            <div class="col-xls-3 col-lg-3 col-md-6 col-sm-6 col-12 info-div-padding">
+                <div class="info-imbox">
+                    <img src="icon/icon1.png" alt="infoImg" class="info-img">
+                    <h1 class="info-h1">
+                        CUSTOM PLAYER
+                    </h1>
+                    <p class="info-p">
+                        t is a long established fact that a reader will be distracted by the readable
+                    </p>                    
+                </div>
+
+            </div>
+            <div class="col-xls-3 col-lg-3 col-md-6 col-sm-6 col-12 info-div-padding">
+                <div class="info-imbox">
+                    <img src="icon/icon2.png" alt="infoImg" class="info-img">
+                    <h1 class="info-h1">
+                        EASY CUSTOMIZE
+                    </h1>
+                    <p class="info-p">
+                        t is a long established fact that a reader will be distracted by the readable
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-xls-3 col-lg-3 col-md-6 col-sm-6 col-12 info-div-padding">
+                <div class="info-imbox">
+                    <img src="icon/icon3.png" alt="infoImg" class="info-img">
+                    <h1 class="info-h1">
+                        MUSIC PLAYLIST
+                    </h1>
+                    <p class="info-p">
+                        t is a long established fact that a reader will be distracted by the readable
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-xls-3 col-lg-3 col-md-6 col-sm-6 col-12 info-div-padding">
+                <div class="info-imbox">
+                    <img src="icon/icon4.png" alt="infoImg" class="info-img">
+                    <h1 class="info-h1">
+                        CUSTOM GALLERY
+                    </h1>
+                    <p class="info-p">
+                        t is a long established fact that a reader will be distracted by the readable
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- box estilo -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="box-img">
+                    <figure class="box-figure">
+                        <img src="img/musicbg.jpg" alt="music" class="box-img">
+                    </figure>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="box-text">
+                    <div class="box-info">
+                        <img src="img/5.png" alt="box" class="box-info-img">
+                        <h3 class="box-info-h3">
+                            MEET OUR MUSIC STARS
+                        </h3>
+                        <p class="box-info-p">
+                            It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout. The point of using Lorem
+                        </p>
+                        <button class="box-info-btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- latest news -->
+    <div class="container-fluid container-padding-news">
+        <div class="row">   
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col text-center line-padding-info-news">
+                <h1 class="news-h1">
+                    LATEST NEWS
+                </h1>
+                <p class="news-p">
+                    It is a long established fact that a reader will be distracted by the readable
+                    content of a page when looking at its layout. The point of using Lorem
+                </p>
+            </div>
+        </div>
+        <div class="row line-padding-info-news-2">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 news-info">
+                <div class="box-news">
+                    <figure class="news-figure-img">
+                        <img src="img/1.jpg" alt="info" class="news-img">
+                    </figure>
+                    <h3 class="news-h3-info">
+                        Live With Music
+                    </h3>
+                    <span class="news-span-info">   
+                        March 20
+                    </span>
+                    <span class="news-span-info">
+                        Comment
+                    </span>
+                    <p class="news-p-info">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that 
+                        it has a more-or-less normal distribution of letters,
+                    </p>                    
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 news-info">
+                <div class="box-news">
+                    <figure class="news-figure-img">
+                        <img src="img/2.jpg" alt="info" class="news-img">
+                    </figure>
+                    <h3 class="news-h3-info">
+                        Best Music
+                    </h3>
+                    <span class="news-span-info">   
+                        March 20
+                    </span>
+                    <span class="news-span-info">
+                        Comment
+                    </span>
+                    <p class="news-p-info">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that 
+                        it has a more-or-less normal distribution of letters,
+                    </p>                    
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 news-info">
+                <div class="box-news">
+                    <figure class="news-figure-img">
+                        <img src="img/3.jpg" alt="info" class="news-img">
+                    </figure>
+                    <h3 class="news-h3-info">
+                        Live With Music
+                    </h3>
+                    <span class="news-span-info">   
+                        March 20
+                    </span>
+                    <span class="news-span-info">
+                        Comment
+                    </span>
+                    <p class="news-p-info">
+                        It is a long established fact that a reader will be distracted
+                        by the readable content of a page when looking at its layout. 
+                        The point of using Lorem Ipsum is that 
+                        it has a more-or-less normal distribution of letters,
+                    </p>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Albums box -->
+    <div class="container-fluid">
+        <div class="row">   
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col text-center line-padding-info-news">
+                <h1 class="albums-h1">
+                    ALBUMS-BOX
+                </h1>
+                <p class="albums-p">
+                    It is a long established fact that a reader will be distracted by the readable
+                    content of a page when looking at its layout. The point of using Lorem
+                </p>
+            </div>
+        </div>
+        <div class="row line-padding-albums-2">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 albums-info " data-toggle="modal" data-target="#modal_1">
+                <div class="">
+                    <figure class="albums-figure-img">
+                        <img src="img/album1.jpg" alt="info" class="albums-info-img">
+                    </figure>
+                    <span class="hoverle">
+                        <img src="img/search.png" alt="search_icon" class="albums-info-search">
+                    </span>                 
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 albums-info " data-toggle="modal" data-target="#modal_2">
+                <div class="">
+                    <figure class="albums-figure-img">
+                        <img src="img/album2.jpg" alt="info" class="albums-info-img">
+                    </figure>
+                    <span class="hoverle">
+                        <img src="img/search.png" alt="search_icon" class="albums-info-search">
+                    </span>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inscripcion -->
+    <div class="container-fluid">
+        <div class="row line-ins">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                <h1 class="ins-h1">
+                    Newsletter
+                </h1>
+                <form class="ins-form">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12" >
+                            <input type="email" class="email-ins" placeholder="Enter Your Email" required >
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 text-center">
+                            <button class="ins-btn">Subscribe</button>
+                        </div>                        
+                    </div>
+                </form>
+            </div>
+        </div>  
+    </div>
+
+    <!-- contact us -->
+    <div class="container-fluid">
+        <div class="row line-padding-contact">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 cont-box">
+                <h1 class="cont-h1">
+                    Contact Us
+                </h1>
+                <ul class="cont-list-info">
+                    <li>
+                        <img src="icon/1.png" alt="icon">
+                        104 New York , USA
+                    </li>
+                    <li>
+                        <img src="icon/2.png" alt="icon">
+                        Phone : ( +71 5896547 )
+                    </li>
+                    <li>
+                        <img src="icon/3.png" alt="icon">
+                        Phone : ( +71 5896547 )
+                    </li>
+                </ul>
+                <ul class="cont-list-red">
+                    <li>
+                        <img src="icon/fb.png" alt="fb">
+                    </li>
+                    <li>
+                        <img src="icon/tw.png" alt="tw">
+                    </li>
+                    <li>
+                        <img src="icon/lin.png" alt="lin">
+                    </li>
+                    <li>
+                        <img src="icon/instagram.png" alt="in">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 cont-box">
+                <h1 class="cont-h1">
+                    Get In Touch
+                </h1>
+                <form class="cont-form">
+                    <input type="text" placeholder="Name" class="cont-form-input">
+                    <input type="text" placeholder="Name" class="cont-form-input">
+                    <input type="text" placeholder="Name" class="cont-form-input">
+                    <textarea type="text" placeholder="Message" class="cont-form-input"></textarea>
+                    <button class="cont-form-btn">Send</button>
+                </form>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 cont-box">
+                <h1 class="cont-h1">
+                    New Music
+                </h1>
+                <figure class="cont-info-img">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-3 col-sm-3 col-6 cont-img-box">
+                            <img src="img/music1.jpg" alt="music" class="cont-info-img-music">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-3 col-sm-3 col-6 cont-img-box">
+                            <img src="img/music2.jpg" alt="music" class="cont-info-img-music">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-3 col-sm-3 col-6 cont-img-box">
+                            <img src="img/music3.jpg" alt="music" class="cont-info-img-music">
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-3 col-sm-3 col-6 cont-img-box">
+                            <img src="img/music4.jpg" alt="music" class="cont-info-img-music">
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="container-fluid">
+        <div class="row line-info-copy">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                <h1 class="copy-h1">
+                    © Copyright 2020 All Right Reserved By Desarrollador Gerson Daniel Boche Peralta
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- popus Modal -->
+    <div class="modal" id="modal_1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content div_modal">
+                <div class="modal-header">
+                    <img src="img/album1.jpg" alt="img" class="img_modal"> 
+                    <button type="button" class="btn btn_clone_modal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content div_modal">
+                <div class="modal-header">
+                    <img src="img/album2.jpg" alt="img" class="img_modal"> 
+                    <button type="button" class="btn btn_clone_modal" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">X</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+    <!-- scripts de librerias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> 
+</body>
+</html>
